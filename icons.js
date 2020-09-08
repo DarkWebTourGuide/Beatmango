@@ -1,12 +1,12 @@
 //Audio Player Icon
-_showDialogButton = document.getElementById("show-dialog");
-_statusDialog = document.getElementById("dialog-status");
+_showDialogButton = document.getElementById("show-radio");
+
 var dialog;
 function showDialog() {
-  _statusDialog.textContent = "Program running";
+  console.log("Radio Currently Running");
   _showDialogButton.disabled = true;
   if (!dialog) {
-    var id = "dialog";
+    var id = "radio";
     // Instanciate the Dialog Box
     dialog = new DialogBox(id, callbackDialog);
   }
@@ -17,16 +17,33 @@ function showDialog() {
   function callbackDialog(btnName) {
     _showDialogButton.disabled = false;
     _showDialogButton.focus();
-    if (btnName == "close") _statusDialog.textContent = "Dialog hidden...";
-    else _statusDialog.textContent = btnName + " button clicked...";
+    if (btnName == "close") console.log("Radio Window Closed");
+    else console.log(" Radio Window Closed");
   }
 }
 
-//About Icon
+//Settings Icon
+_showDialogButton = document.getElementById("show-settings");
+
+var dialog;
+function showDialog() {
+  console.log("Settings Currently Running");
+  _showDialogButton.disabled = true;
+  if (!dialog) {
+    var id = "settings";
+    // Instanciate the Dialog Box
+    dialog = new DialogBox(id, callbackDialog);
+  }
+  // Show Dialog Box
+  dialog.showDialog();
+
+  // Receive result from Dialog Box
+  function callbackDialog(btnName) {
+    _showDialogButton.disabled = false;
+    _showDialogButton.focus();
+    if (btnName == "close") console.log("Settings Window Closed");
+    else console.log(" Settings Window Closed");
+  }
+}
 
 //Settings Icon
-var infoBox;
-function showInfo() {
-  if (!infoBox) infoBox = new DialogBox("infoBox");
-  infoBox.showDialog();
-}

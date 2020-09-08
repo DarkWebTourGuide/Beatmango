@@ -40,59 +40,55 @@ body {
 }
 .cb-slideshow:after {
   content: "";
-  background: transparent url(https://giphy.com/gifs/jAe22Ec5iICCk/html5) repeat
-    top left;
+  background: url(https://giphy.com/gifs/jAe22Ec5iICCk/html5) repeat top left;
 }
 
 audio {
   display: none !important; /* can't emphasize this enough */
 }
 
-/* Audio Icons */
+/* General Icon Styling*/
+
 .show-button {
-  height: 36px;
-  font-size: 1.2em;
   cursor: pointer;
-  color: #fff;
-  background: #39c;
 }
 .show-button:disabled {
   cursor: default;
-  color: #aaa;
-  background: #069;
 }
-.status-bar {
+
+/* Audio Icons */
+.radioiconbutton {
+  padding: 50px 50px 50px 50px;
+  font-family: "Press Start 2P", cursive;
+  border: none;
+  background: transparent;
+  background-image: url(assets/radioicon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* .status-bar {
   width: 200px;
   padding: 6px 8px;
   font-size: 1.2em;
   color: #fff;
   background: #e80;
   border: 1px solid #aaa;
-}
+} */
 
 /* MangOS Icon */
 
 /* Settings Icon */
-#infoBox.dialog {
-  background: #999;
-}
-#infoBox.dialog .titlebar,
-#infoBox.dialog .buttonset button {
-  background: #4ad;
-}
-#infoBox.dialog .buttonset button.active {
-  background: #2b8;
-  border-color: #eee;
-}
+
 /* Windows */
 .dialog {
   display: none; /* not visible by default */
-  font-family: Verdana, sans-serif;
+  font-family: "Press Start 2P", cursive;
   font-size: 12px;
   font-weight: 400;
-  color: #fff;
-  background: #666;
-  border: 1px solid #fff; /* change allowed; Border to separate multipe dialog boxes */
+  color: #000;
+  background: rgb(230, 177, 129);
+  border: 1px solid #000; /* change allowed; Border to separate multipe dialog boxes */
   margin: 0;
   position: absolute;
 }
@@ -100,20 +96,17 @@ audio {
   height: 32px; /* same as .dialog>button height */
   line-height: 32px; /* same as .dialog>button height */
   vertical-align: middle;
-  font-size: 1.2em;
   padding: 0 8px 0 8px; /* change NOT allowed */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   cursor: move;
-  background: #39c;
 }
 .dialog .content {
   position: absolute;
   top: 48px; /* change allowed */
   left: 16px; /* change NOT allowed */
   overflow: auto;
-  font-size: 1em;
 }
 .dialog .buttonpane:before {
   width: 100%;
@@ -155,7 +148,7 @@ audio {
   padding: 0;
   border: 0;
   font-size: 1.4em;
-  background: #fa0;
+  background: #000;
 }
 /* .dialog>button.hover, */
 .dialog > button:hover,
