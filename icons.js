@@ -1,49 +1,23 @@
-//Audio Player Icon
-_showDialogButton = document.getElementById("show-radio");
+//Radio Icon
 
-var dialog;
-function showDialog() {
-  console.log("Radio Currently Running");
-  _showDialogButton.disabled = true;
-  if (!dialog) {
-    var id = "radio";
-    // Instanciate the Dialog Box
-    dialog = new DialogBox(id, callbackDialog);
-  }
-  // Show Dialog Box
-  dialog.showDialog();
-
-  // Receive result from Dialog Box
-  function callbackDialog(btnName) {
-    _showDialogButton.disabled = false;
-    _showDialogButton.focus();
-    if (btnName == "close") console.log("Radio Window Closed");
-    else console.log(" Radio Window Closed");
-  }
+var radio;
+function showRadio() {
+  if (!radio) radio = new DialogBox("radio");
+  radio.showDialog();
 }
 
 //Settings Icon
-_showDialogButton = document.getElementById("show-settings");
 
-var dialog;
-function showDialog() {
-  console.log("Settings Currently Running");
-  _showDialogButton.disabled = true;
-  if (!dialog) {
-    var id = "settings";
-    // Instanciate the Dialog Box
-    dialog = new DialogBox(id, callbackDialog);
-  }
-  // Show Dialog Box
-  dialog.showDialog();
-
-  // Receive result from Dialog Box
-  function callbackDialog(btnName) {
-    _showDialogButton.disabled = false;
-    _showDialogButton.focus();
-    if (btnName == "close") console.log("Settings Window Closed");
-    else console.log(" Settings Window Closed");
-  }
+var settings;
+function showSettings() {
+  if (!settings) settings = new DialogBox("settings");
+  settings.showDialog();
 }
 
-//Settings Icon
+//About Icon
+
+var about;
+function showAbout() {
+  if (!about) about = new DialogBox("about");
+  about.showDialog();
+}
