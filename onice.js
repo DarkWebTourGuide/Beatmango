@@ -45,3 +45,11 @@
 //     else console.log(" Settings Window Closed");
 //   }
 // }
+
+// BTN SET UP
+//       <div class="buttonpane">
+// <div class="buttonset">
+// <button name="ok">OK</button>
+// <button name="cancel">Cancel</button>
+// </div>
+// </div>
