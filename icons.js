@@ -21,3 +21,10 @@ function showAbout() {
   if (!about) about = new DialogBox("about");
   about.showDialog();
 }
+
+//TV Icon
+//Top Songs Icon
+//Playlists Icon
+//Zenmode Icon
+//WorkMode Icon
+//BreakMode Icon
