@@ -53,3 +53,22 @@
 // <button name="cancel">Cancel</button>
 // </div>
 // </div>
+
+// <!--Radio Icon-->
+// <button
+//   id="show-radio"
+//   class="radioiconbutton"
+//   onclick="showRadio();"
+// ></button>
+// <!--About Icon-->
+// <button
+//   id="show-about"
+//   class="abouticonbutton"
+//   onclick="showAbout();"
+// ></button>
+// <!--Settings Icon-->
+// <button
+//   id="show-settings"
+//   class="settingsiconbutton"
+//   onclick="showSettings();"
+// ></button>
