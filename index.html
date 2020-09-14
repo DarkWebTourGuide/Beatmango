@@ -43,10 +43,20 @@
 If you add buttons you need additional elements with class "buttonpane" and "buttonset".
 width and height are optional.
 -->
-    <div id="radio" class="dialog" style="min-width: 280px; min-height: 270px">
+    <div id="radio" class="dialog" style="min-width: 280px; min-height: 270px; max-width: 280px; max-height: 270px">
       <div class="titlebar">Beatmango Radio</div>
       <button name="close">X</button>
-      <div class="content"></div>
+      <div class="content">
+        <iframe
+          width="200px"
+          height="200px"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/223625152&color=%23e7b457&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&sharing=false&show_playcount=false&liking=false"
+        ></iframe>
+        </div>
+      </div>
     </div>
 
     <div
@@ -81,6 +91,7 @@ width and height are optional.
     </div>
     <script src="windows.js"></script>
     <script src="icons.js"></script>
+    <script src="https://w.soundcloud.com/player/api.js"></script>
     <script src="scapi.js"></script>
   </body>
 </html>
