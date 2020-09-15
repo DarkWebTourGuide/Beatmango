@@ -9,10 +9,10 @@ var bg = [
   "https://media.giphy.com/media/8gOtTSdJk6Y6jw3nNV/giphy.gif",
 ];
 
-var bgswap = document.getElementById("bgswap");
 var x = 0;
 var timer;
-var ssbtn = document.getElementById("ss");
+const bgswap = document.getElementById("bgswap");
+const ssbtn = document.getElementById("ss");
 
 function displayImage(x) {
   bgswap.style.backgroundImage = "url(" + bg[x] + ")";
@@ -49,7 +49,7 @@ function previousImage() {
 
 //Random Gif
 function randomImage() {
-  x = x === Math.floor(Math.random(bg.length) * 5) + 1;
+  x = x === bg.length;
   document.getElementById("bgswap").style.backgroundImage =
-    "url(" + bg[x] + ")";
+    "url(" + bg[Math.floor(Math.random() * bg.length)] + ")";
 }
