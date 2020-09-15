@@ -45,16 +45,10 @@
       <div class="titlebar">Radio</div>
       <button name="close">X</button>
       <div class="content">
-        <iframe id="player"
-          width="200px"
-          height="200px"
-          scrolling="no"
-          frameborder="no"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/223625152"
-        ></iframe>
-        <a  href="#" target="_blank"><span id="playpause">Pause</span></a>
-        <a href="javascript:shuffleButt()" id="button_sc_next">Next</a>
+        <iframe id="player" width="200px" height="200px" scrolling="no" frameborder="no" allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/223625152"></iframe>
+        <a href="javascript:playPause()" target="_blank"><span id="playpause">Pause</span></a>
+        <a href="javascript:play_next_shuffled_song()" id="button_sc_next">Next</a>
 
         </div>
       </div>
