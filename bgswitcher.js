@@ -3,11 +3,20 @@ var bg = [
   "https://media.giphy.com/media/XxHVJxuogNP32/giphy.gif",
   "https://media.giphy.com/media/mlBDoVLOGidEc/giphy.gif",
   "https://media.giphy.com/media/vMSXa7KFGx49aeeXhe/giphy.gif",
+  "https://media.giphy.com/media/2eKfFHjb30D9tDdJ59/giphy.gif",
   "https://media.giphy.com/media/2seKKLp1n0sEeJLYTK/giphy.gif",
   "https://media.giphy.com/media/d2NfTnGMMBT8ORweXA/giphy.gif",
-  "https://media.giphy.com/media/451shsqh5nJ9UqDElR/giphy.gif",
+  "https://media.giphy.com/media/bi6RQ5x3tqoSI/giphy.gif",
+  "https://media.giphy.com/media/55e17EiIUYYTu/giphy.gif",
+  "https://media.giphy.com/media/12yMg2IFifCT1C/giphy.gif",
+  "https://media.giphy.com/media/nSiNho356rXH2/giphy.gif",
+  "https://media.giphy.com/media/fUpvkRuLKE4xMBJLvH/giphy.gif",
   "https://media.giphy.com/media/1zgzISaYrnMAYRJJEr/giphy.gif",
-  "https://media.giphy.com/media/8gOtTSdJk6Y6jw3nNV/giphy.gif",
+  "https://media.giphy.com/media/3o7qDHKzYpapPQa6S4/giphy.gif",
+  "https://media.giphy.com/media/jAe22Ec5iICCk/giphy.gif",
+  "https://media.giphy.com/media/hTrZGPtFNfOiPVhXhT/giphy.gif",
+  "https://media.giphy.com/media/JEZ3wy3IUQR8s/giphy.gif",
+  "https://media.giphy.com/media/13TdMFTIORb9aU/giphy.gif",
 ];
 
 //Static Background Array
