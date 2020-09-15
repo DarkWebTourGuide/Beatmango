@@ -1,3 +1,4 @@
+//Gif Array
 var bg = [
   "https://media.giphy.com/media/XxHVJxuogNP32/giphy.gif",
   "https://media.giphy.com/media/mlBDoVLOGidEc/giphy.gif",
@@ -9,15 +10,30 @@ var bg = [
   "https://media.giphy.com/media/8gOtTSdJk6Y6jw3nNV/giphy.gif",
 ];
 
+//Static Background Array
+var sbg = [
+  "Assets/staticbg/classicmango.png",
+  "Assets/staticbg/delight.png",
+  "Assets/staticbg/greenrngr.png",
+  "Assets/staticbg/kamehameha.png",
+  "Assets/staticbg/plutoe.png",
+  "Assets/staticbg/sanctum.png",
+  "Assets/staticbg/nookscranny.png",
+  "Assets/staticbg/greymatter.png",
+];
+
+//Main Variables
 var x = 0;
 var timer;
 const bgswap = document.getElementById("bgswap");
 const ssbtn = document.getElementById("ss");
 
+//Main Gif Background Switch
 function displayImage(x) {
   bgswap.style.backgroundImage = "url(" + bg[x] + ")";
 }
 
+//Slideshow Gif Activation - Deactivation
 function startTimer() {
   document.getElementById("ss").innerHTML = "Slideshow.On";
   if (timer) {
@@ -52,4 +68,9 @@ function randomImage() {
   x = x === bg.length;
   document.getElementById("bgswap").style.backgroundImage =
     "url(" + bg[Math.floor(Math.random() * bg.length)] + ")";
+}
+
+//Main Static Background Switch
+function displayStatic(x) {
+  bgswap.style.backgroundImage = "url(" + sbg[0] + ")";
 }
