@@ -161,6 +161,10 @@ body .bgchange {
   margin-bottom: 7px;
 }
 
+.dialog .content a:active {
+  transform: scale(0.85);
+}
+
 .dialog .buttonpane:before {
   width: 100%;
   height: 0;
