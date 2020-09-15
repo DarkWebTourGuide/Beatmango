@@ -36,22 +36,27 @@ body {
   color: #000;
 }
 
-/* .cb-slideshow,
-.cb-slideshow:after {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  z-index: 0;
-}
-.cb-slideshow:after {
-  content: "";
-  background: url(https://giphy.com/gifs/jAe22Ec5iICCk/html5) repeat top left;
-} */
-
 /* Icon Section */
 
+body .bgchange {
+  width: 110vw;
+  height: 110vh;
+  font-family: "Press Start 2P", cursive;
+  font-size: 10px;
+  line-height: 14pt;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden !important;
+  cursor: default !important;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  color: #000;
+}
 .icon-section {
   left: 10px;
   bottom: 10px;
@@ -120,7 +125,9 @@ body {
   border: 1px solid #000; /* change allowed; Border to separate multipe dialog boxes */
   margin: 0;
   position: absolute;
+  box-shadow: 5px 10px;
 }
+
 .dialog .titlebar {
   font-size: 14px;
   font-weight: 400;
@@ -134,7 +141,7 @@ body {
   cursor: move;
 }
 .dialog .content {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Press Start 2P", cursive;
   font-size: 14px;
   font-weight: lighter;
   letter-spacing: 1px;
@@ -144,6 +151,17 @@ body {
   left: 16px; /* change NOT allowed */
   overflow: auto;
 }
+
+.dialog .content a {
+  border: 1px solid #000;
+  margin: auto;
+  padding: 5px;
+  background-color: #000;
+  color: #fff;
+  display: block;
+  margin-bottom: 5px;
+}
+
 .dialog .buttonpane:before {
   width: 100%;
   height: 0;
@@ -218,6 +236,13 @@ body {
   border-color: #ddd;
 }
 
+.dialog .buttonset a {
+  border: 1px solid #000;
+  margin: auto;
+  padding: 5px;
+  background-color: #000;
+  color: #fff;
+}
 .mangif {
   width: 100%;
   height: 100%;
