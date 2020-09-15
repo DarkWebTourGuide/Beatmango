@@ -22,6 +22,12 @@ function showAbout() {
   about.showDialog();
 }
 
+//Welcome
+var welcome;
+function showWelcome() {
+  if (!welcome) welcome = new DialogBox("welcome");
+  welcome.showDialog();
+}
 //TV Icon
 //Top Songs Icon
 //Playlists Icon
