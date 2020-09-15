@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <!--link rel="icon" href="favicon.png" type="image/png" /-->
   </head>
-  <body  id="bgswap" class="bgchange">
+  <body   id="bgswap" class="bgchange">
     <div class="icon-section">
       <ul>
         <!--Radio Icon-->
@@ -17,7 +17,7 @@
           <button
             id="show-radio"
             class="radioiconbutton"
-            onclick="showRadio();"
+            onclick="showRadio(), shuffleButt();"
           ></button>
         </li>
         <!--About Icon-->
@@ -40,22 +40,26 @@
     </div>
 
     <!-- Windows -->
+    <!--Radio Window-->
     <div id="radio" class="dialog" style="min-width: 280px; min-height: 270px; max-width: 280px; ">
-      <div class="titlebar">Beatmango Radio</div>
+      <div class="titlebar">Radio</div>
       <button name="close">X</button>
       <div class="content">
-        <iframe
+        <iframe id="player"
           width="200px"
           height="200px"
           scrolling="no"
           frameborder="no"
           allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/223625152&color=%23e7b457&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&sharing=false&show_playcount=false&liking=false"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/223625152"
         ></iframe>
+        <a  href="#" target="_blank"><span id="playpause">Pause</span></a>
+        <a href="javascript:shuffleButt()" id="button_sc_next">Next</a>
+
         </div>
       </div>
     </div>
-
+    <!--Settings Window-->
     <div
       id="settings"
       class="dialog"
@@ -84,7 +88,7 @@
 
       </div>
     </div>
-
+<!--About Window-->
     <div id="about" class="dialog" style="min-width: 320px; min-height: 380px">
       <div class="titlebar">About</div>
       <button name="close">X</button>
@@ -102,8 +106,23 @@
         <a href="https://github.com" target="_blank">Github</a>
       </div>
     </div>
+<!--Welcome Window-->
+    <div id="welcome" class="dialog" style="min-width: 280px; min-height: 350px">
+      <div class="titlebar">Welcome  </div>
+      <button name="close">X</button>
+      <div class="content">
+
+ 
+        <h5>Enjoy a curated mix of chill tones and calming visuals handpicked to help you focus. Simply click an icon and let the music move you!</h5>
+        <img src="Assets/beatmango.png" style="max-width: 100px; max-height: 50px;">
+      </div>
+    </div>
+
+
+    <script src="https://w.soundcloud.com/player/api.js"></script>
     <script src="windows.js"></script>
     <script src="icons.js"></script>
-<script src="bgswitcher.js"></script>
+    <script src="bgswitcher.js"></script>
+    <script src="player.js"></script>
   </body>
 </html>
