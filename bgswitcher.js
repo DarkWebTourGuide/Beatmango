@@ -12,24 +12,19 @@ var bg = [
 var bgswap = document.getElementById("bgswap");
 var x = 0;
 var timer;
+var ssbtn = document.getElementById("ss");
 
 function displayImage(x) {
   bgswap.style.backgroundImage = "url(" + bg[x] + ")";
 }
 
-// function startTimer() {
-//   displayImage(x);
-//   setInterval(function () {
-//     x = x + 1 >= bg.length ? 0 : x + 1;
-//     displayImage(x);
-//   }, 4000);
-// }
-
 function startTimer() {
+  document.getElementById("ss").innerHTML = "Slideshow.On";
   if (timer) {
     // stop
     clearInterval(timer);
     timer = null;
+    document.getElementById("ss").innerHTML = "Slideshow.Off";
   } else {
     timer = setInterval(function () {
       x = x + 1 >= bg.length ? 0 : x + 1;
