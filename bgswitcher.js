@@ -72,5 +72,5 @@ function randomImage() {
 
 //Main Static Background Switch
 function displayStatic(x) {
-  bgswap.style.backgroundImage = "url(" + sbg[0] + ")";
+  bgswap.style.backgroundImage = "url(" + sbg[x] + ")";
 }
