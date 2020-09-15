@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <!--link rel="icon" href="favicon.png" type="image/png" /-->
   </head>
-  <body>
+  <body  id="bgswap" class="bgchange">
     <div class="icon-section">
       <ul>
         <!--Radio Icon-->
@@ -43,7 +43,7 @@
 If you add buttons you need additional elements with class "buttonpane" and "buttonset".
 width and height are optional.
 -->
-    <div id="radio" class="dialog" style="min-width: 280px; min-height: 270px; max-width: 280px; max-height: 270px">
+    <div id="radio" class="dialog" style="min-width: 280px; min-height: 270px; max-width: 280px; ">
       <div class="titlebar">Beatmango Radio</div>
       <button name="close">X</button>
       <div class="content">
@@ -64,15 +64,23 @@ width and height are optional.
       class="dialog"
       style="min-width: 250px; min-height: 390px"
     >
-      <div class="titlebar">Settings</div>
+    <div class="titlebar">Settings</div>
       <button name="close">X</button>
       <div class="content">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
+ 
+          <h3>Change Background:</h3>
+          <h4>Gifs</h4>
+        <a href="javascript:randomImage()" target="_blank">Random.Gif</a>
+        <a href="javascript:previousImage()" target="_blank">Prev.Gif</a>
+        <a  href="javascript:nextImage()" target="_blank">Next.Gif</a>
+        <a  href="javascript:startTimer()" target="_blank"><span id="ss">Slideshow.Off</span></a>
+        <h4>Static Themes</h4>
+ 
+        <a href="https://chrisadams.io" target="_blank">Pluto Sunset</a>
+        <a href="https://chrisadams.io" target="_blank">Nova Bliss</a>
+        <a href="https://chrisadams.io" target="_blank">Sol L'orange</a>
+        <a href="https://chrisadams.io" target="_blank">Green Ranger</a>
+        <a href="https://chrisadams.io" target="_blank">Jellyfishing</a>
       </div>
     </div>
 
@@ -91,7 +99,6 @@ width and height are optional.
     </div>
     <script src="windows.js"></script>
     <script src="icons.js"></script>
-    <script src="https://w.soundcloud.com/player/api.js"></script>
-    <script src="scapi.js"></script>
+<script src="bgswitcher.js"></script>
   </body>
 </html>
