@@ -36,8 +36,6 @@ body {
   color: #000;
 }
 
-/* Icon Section */
-
 body .bgchange {
   width: 110vw;
   height: 110vh;
@@ -57,8 +55,11 @@ body .bgchange {
   -ms-user-select: none;
   color: #000;
 }
+
+/* Icon Section */
+
 .icon-section {
-  left: 10px;
+  left: 5px;
   bottom: 10px;
   position: absolute;
 }
@@ -66,7 +67,7 @@ body .bgchange {
 .icon-section ul {
   display: flex;
   list-style: none;
-  margin-left: 20px;
+  margin-left: 5px;
   padding: 10px;
   flex-wrap: wrap;
 }
@@ -74,7 +75,7 @@ body .bgchange {
 .icon-section ul li {
   width: 70px;
   height: 70px;
-  margin-left: 20px;
+  margin-left: 15px;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -165,6 +166,11 @@ body .bgchange {
   transform: scale(0.85);
 }
 
+.dialog .content a:hover {
+  transform: scale(0.95);
+  color: #e80;
+}
+
 .dialog .buttonpane:before {
   width: 100%;
   height: 0;
@@ -251,4 +257,14 @@ body .bgchange {
   height: 100%;
   max-width: 280px;
   max-height: 200px;
+}
+
+iframe {
+  display: none;
+}
+
+#tracktitle {
+  margin-bottom: 7px;
+  padding: 15px;
+  border: 3px solid #000;
 }
