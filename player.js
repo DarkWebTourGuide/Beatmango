@@ -18,6 +18,7 @@ function shuffleButt() {
       play_next_shuffled_song();
     });
   });
+
   //Next Button Click
   document
     .querySelector("#button_sc_next")
@@ -67,18 +68,12 @@ function playPause() {
   }
 }
 
-// //Player Data
-// function songData() {
-//   widget1.bind(SC.Widget.Events.READY, function () {
-//     widget1.bind(SC.Widget.Events.FINISH, function () {
-//       currSong();
-//     });
-//   });
-// }
-
-// //Title + Artist
-// function currSong() {
-//   widget1.getCurrentSound(function (sounds) {
-//     console.log(sounds.title);
-//   });
-// }
+//Current Song Data
+function currSong() {
+  widget1.getCurrentSound(function (sounds) {
+    console.log(sounds.title);
+    console.log(sounds.artwork_url);
+    // document.getElementById("trackart").innerHTML = sounds.artwork_url;
+    document.getElementById("tracktitle").innerHTML = sounds.title;
+  });
+}
