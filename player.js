@@ -1,9 +1,12 @@
+//Global
+
 var iframeElement = document.querySelector("iframe");
 var widget1 = SC.Widget(iframeElement);
 var widget = null;
 var song_indexes = new Array();
 var current_index = 0;
 
+//Shuffle On Load
 function shuffleButt() {
   widget1.bind(SC.Widget.Events.READY, function () {
     widget1.bind(SC.Widget.Events.FINISH, function () {
@@ -15,11 +18,13 @@ function shuffleButt() {
       play_next_shuffled_song();
     });
   });
+  //Next Button Click
   document
     .querySelector("#button_sc_next")
     .addEventListener("click", play_next_shuffled_song);
 }
 
+//Next Button Auto Shuffle
 function play_next_shuffled_song() {
   if (current_index >= song_indexes.length) {
     current_index = 0;
@@ -30,6 +35,7 @@ function play_next_shuffled_song() {
   console.log(track_number);
 }
 
+//Shuffle Init
 function create_shuffled_indexes(num_songs) {
   for (var i = 0; i < num_songs; i++) {
     song_indexes.push(i);
@@ -51,11 +57,28 @@ function shuffle(o) {
 
 //Play/Pause Button
 function playPause() {
-  if (widget1.toggle() == widget1.pause()) {
-    document.getElementById("playpause").innerHTML = "Play";
+  var pause = document.getElementById("playpause");
+  if (pause.innerHTML === "Pause") {
+    widget1.pause();
+    pause.innerHTML = "Play";
   } else {
-    document.getElementById("playpause").innerHTML = "Pause";
+    widget1.play();
+    pause.innerHTML = "Pause";
   }
 }
 
-// document.querySelector("#playpause").addEventListener("click", playPause);
+// //Player Data
+// function songData() {
+//   widget1.bind(SC.Widget.Events.READY, function () {
+//     widget1.bind(SC.Widget.Events.FINISH, function () {
+//       currSong();
+//     });
+//   });
+// }
+
+// //Title + Artist
+// function currSong() {
+//   widget1.getCurrentSound(function (sounds) {
+//     console.log(sounds.title);
+//   });
+// }
