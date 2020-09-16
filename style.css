@@ -87,7 +87,7 @@ body .bgchange {
   font-family: "Press Start 2P", cursive;
   border: none;
   background: transparent;
-  background-image: url(assets/radioicon.png);
+  background-image: url(Assets/radioicon.png);
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -99,7 +99,7 @@ body .bgchange {
   font-family: "Press Start 2P", cursive;
   border: none;
   background: transparent;
-  background-image: url(assets/abouticon.png);
+  background-image: url(Assets/abouticon.png);
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -111,7 +111,7 @@ body .bgchange {
   font-family: "Press Start 2P", cursive;
   border: none;
   background: transparent;
-  background-image: url(assets/settingsicon.png);
+  background-image: url(Assets/settingsicon.png);
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
