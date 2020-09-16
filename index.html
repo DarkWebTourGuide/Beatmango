@@ -15,9 +15,10 @@
         <!--Radio Icon-->
         <li>
           <button
+            on
             id="show-radio"
             class="radioiconbutton"
-            onclick="showRadio(), shuffleButt();"
+            onclick="showRadio(), shuffleButt(), currSong();"
           ></button>
         </li>
         <!--About Icon-->
@@ -51,17 +52,22 @@
       <div class="content">
         <iframe
           id="player"
-          width="200px"
-          height="200px"
+          width="100"
+          height="100"
           scrolling="no"
           frameborder="no"
           allow="autoplay"
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/223625152"
         ></iframe>
+        <div id="trackart"></div>
+        <div id="tracktitle"></div>
+        <br />
         <a href="javascript:playPause()" target="_blank"
           ><span id="playpause">Pause</span></a
         >
-        <a href="javascript:play_next_shuffled_song()" id="button_sc_next"
+        <a
+          href="javascript:play_next_shuffled_song(),currSong()"
+          id="button_sc_next"
           >Next</a
         >
       </div>
