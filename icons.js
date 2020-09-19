@@ -22,15 +22,20 @@ function showAbout() {
   about.showDialog();
 }
 
-//Welcome
-var welcome;
-function showWelcome() {
-  if (!welcome) welcome = new DialogBox("welcome");
-  welcome.showDialog();
+//Update
+var update;
+function showUpdate() {
+  if (!update) update = new DialogBox("update");
+  update.showDialog();
 }
 //TV Icon
 //Top Songs Icon
 //Playlists Icon
 //Zenmode Icon
+var pomo;
+function showPomo() {
+  if (!pomo) pomo = new DialogBox("pomo");
+  pomo.showDialog();
+}
 //WorkMode Icon
 //BreakMode Icon
