@@ -40,6 +40,14 @@
             onclick="showSettings();"
           ></button>
         </li>
+        <!--Focus Icon-->
+        <li>
+          <button
+            id="show-pomo"
+            class="pomoiconbutton"
+            onclick="showPomo();"
+          ></button>
+        </li>
       </ul>
     </div>
 
@@ -123,15 +131,23 @@
       </div>
     </div>
     <!--Updates Window-->
-    <div
-      id="welcome"
-      class="dialog"
-      style="min-width: 280px; min-height: 350px"
-    >
+    <div id="update" class="dialog" style="min-width: 280px; min-height: 350px">
       <div class="titlebar">Updates:</div>
       <button name="close">X</button>
       <div class="content">
         <h5>Introducing Slideshow Mode in Settings.</h5>
+        <img
+          src="Assets/beatmango.png"
+          style="max-width: 100px; max-height: 50px"
+        />
+      </div>
+    </div>
+    <!--Focus Window-->
+    <div id="pomo" class="dialog" style="min-width: 280px; min-height: 350px">
+      <div class="titlebar">Productivity</div>
+      <button name="close">X</button>
+      <div class="content">
+        <h5>Pace yourself.</h5>
         <img
           src="Assets/beatmango.png"
           style="max-width: 100px; max-height: 50px"
