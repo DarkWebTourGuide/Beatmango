@@ -117,6 +117,17 @@ body .bgchange {
   cursor: pointer;
 }
 
+/* Focus Icon */
+.pomoiconbutton {
+  padding: 50px 50px 50px 50px;
+  font-family: "Press Start 2P", cursive;
+  border: none;
+  background: transparent;
+  background-image: url(Assets/icons/focusicon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
 /* Windows */
 .dialog {
   display: none; /* not visible by default */
