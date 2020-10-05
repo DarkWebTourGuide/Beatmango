@@ -31,6 +31,12 @@ function showUpdate() {
 //TV Icon
 //Top Songs Icon
 //Playlists Icon
+// Donate Icon
+var dono;
+function showDono() {
+  if (!dono) dono = new DialogBox("dono");
+  dono.showDialog();
+}
 //Zenmode Icon
 var pomo;
 function showPomo() {
