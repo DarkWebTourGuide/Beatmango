@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <!--link rel="icon" href="favicon.png" type="image/png" /-->
   </head>
-  <body id="bgswap" class="bgchange">
+  <body onload="showUpdate()" id="bgswap" class="bgchange">
     <div class="loader">
       <img src="Assets/gifs/loader.gif" alt="Loading..." />
     </div>
@@ -40,14 +40,22 @@
             onclick="showSettings();"
           ></button>
         </li>
-        <!--Focus Icon-->
+        <!--Donate Icon-->
         <li>
           <button
-            id="show-pomo"
-            class="pomoiconbutton"
-            onclick="showPomo();"
+            id="show-dono"
+            class="donoiconbutton"
+            onclick="showDono();"
           ></button>
         </li>
+        <!--Focus Icon
+                <li>
+                  <button
+                    id="show-pomo"
+                    class="pomoiconbutton"
+                    onclick="showPomo();"
+                  ></button>
+                </li> -->
       </ul>
     </div>
 
@@ -68,7 +76,7 @@
           scrolling="no"
           frameborder="no"
           allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/223625152"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1122034528"
         ></iframe>
         <div id="tracktitle"></div>
         <br />
@@ -132,17 +140,36 @@
     </div>
     <!--Updates Window-->
     <div id="update" class="dialog" style="min-width: 280px; min-height: 350px">
-      <div class="titlebar">Updates:</div>
+      <div class="titlebar">Welcome!</div>
       <button name="close">X</button>
       <div class="content">
-        <h5>Introducing Slideshow Mode in Settings.</h5>
+        <h2>Latest Updates:</h2>
+        <h4>
+          Introducing Slideshow Mode in Settings.
+          <br />
+          <br />
+          New Static Themes
+          <br />
+          <br />
+          Player Button Fix
+        </h4>
         <img
           src="Assets/beatmango.png"
-          style="max-width: 100px; max-height: 50px"
+          style="max-width: 200px; max-height: 100px"
         />
       </div>
     </div>
-    <!--Focus Window-->
+    <!--Donate Window-->
+    <div id="dono" class="dialog" style="min-width: 280px; min-height: 240px">
+      <div class="titlebar">Donate:</div>
+      <button name="close">X</button>
+      <div class="content">
+        <h4>Donations help further the project!</h4>
+        <a href="" target="_blank">PayPal</a>
+        <a href="" target="_blank">Patreon</a>
+      </div>
+    </div>
+    <!--Focus Window
     <div id="pomo" class="dialog" style="min-width: 280px; min-height: 350px">
       <div class="titlebar">Productivity</div>
       <button name="close">X</button>
@@ -153,7 +180,7 @@
           style="max-width: 100px; max-height: 50px"
         />
       </div>
-    </div>
+    </div> -->
     <script src="loader.js"></script>
     <script src="https://w.soundcloud.com/player/api.js"></script>
     <script src="windows.js"></script>
