@@ -38,10 +38,5 @@ function showDono() {
   dono.showDialog();
 }
 //Zenmode Icon
-var pomo;
-function showPomo() {
-  if (!pomo) pomo = new DialogBox("pomo");
-  pomo.showDialog();
-}
 //WorkMode Icon
 //BreakMode Icon
