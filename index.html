@@ -17,12 +17,12 @@
     <div class="loader">
       <img src="Assets/gifs/loader.gif" alt="Loading..." />
     </div>
+    <!-- Icon Section *ALWAYS AT BOTTOM* -->
     <div class="icon-section">
       <ul>
         <!--Radio Icon-->
         <li>
           <button
-            on
             id="show-radio"
             class="radioiconbutton"
             onclick="showRadio(), shuffleButt(), currSong();"
@@ -54,14 +54,12 @@
         </li>
       </ul>
     </div>
-
-    <!-- Windows -->
+    <!-- Window Layouts -->
     <!--Radio Window-->
     <div
       id="radio"
       class="dialog"
-      style="min-width: 280px; min-height: 300px; max-width: 280px"
-    >
+      style="min-width: 280px; min-height: 300px; max-width: 280px">
       <div class="titlebar">Radio</div>
       <button name="close">X</button>
       <div class="content">
@@ -72,28 +70,24 @@
           scrolling="no"
           frameborder="no"
           allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1122034528"
-        ></iframe>
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1122034528">
+        </iframe>
         <div id="tracktitle"></div>
         <br />
-        <img class="radgif" src="Assets/gifs/radio.gif" />
-
-        <a href="javascript:playPause()" target="_blank"
-          ><span id="playpause">Pause</span></a
-        >
-        <a
-          href="javascript:play_next_shuffled_song(),currSong()"
-          id="button_sc_next"
-          >Next</a
-        >
+        <img class="radgif" src="Assets/gifs/radio.gif"/>
+        <a href="javascript:playPause()" target="_blank">
+          <span id="playpause">Pause</span>
+        </a>
+        <a href="javascript:play_next_shuffled_song(),currSong()" id="button_sc_next">Next
+        </a>
       </div>
     </div>
     <!--Settings Window-->
+    <!-- Links replace buttons in windows due to window resize/drag constraints -->
     <div
       id="settings"
       class="dialog"
-      style="min-width: 250px; min-height: 390px"
-    >
+      style="min-width: 250px; min-height: 390px">
       <div class="titlebar">Settings</div>
       <button name="close">X</button>
       <div class="content">
@@ -103,7 +97,6 @@
         <a href="javascript:nextImage()">Next.Gif</a>
         <a href="javascript:startTimer()"><span id="ss">Slideshow.Off</span></a>
         <h3>Static Themes</h3>
-
         <a href="javascript:displayStatic(0)">Classic Mango</a>
         <a href="javascript:displayStatic(1)">Delight</a>
         <a href="javascript:displayStatic(2)">Green Rngr</a>
@@ -119,14 +112,13 @@
       <div class="titlebar">About</div>
       <button name="close">X</button>
       <div class="content">
-        <img class="mangif" src="Assets/gifs/mangOS.gif" />
+        <img class="mangif" src="Assets/gifs/mangOS.gif"/>
         <h3>Developed by:</h3>
         <h5>ChrisAdams.io</h5>
         <h3>Design + Icons:</h3>
         <h5>ChrisAdams.io</h5>
         <h3>Resize + Drag:</h3>
         <h5>ZulNs<br />FrankBuchholz</h5>
-
         <h3>Powered by:</h3>
         <h5>Soundcloud<br />Giphy</h5>
       </div>
@@ -148,8 +140,7 @@
         </h4>
         <img
           src="Assets/beatmango.png"
-          style="max-width: 200px; max-height: 100px"
-        />
+          style="max-width: 200px; max-height: 100px"/>
       </div>
     </div>
     <!--Donate Window-->
@@ -158,14 +149,11 @@
       <button name="close">X</button>
       <div class="content">
         <h4>Donations help further the project!</h4>
-        <a
-          href="https://www.paypal.com/biz/fund?id=SEZ4EWQ7PMTNU"
-          target="_blank"
-          >PayPal</a
-        >
+        <a href="https://www.paypal.com/biz/fund?id=SEZ4EWQ7PMTNU" target="_blank">PayPal</a>
         <a href="https://www.patreon.com/beatmango" target="_blank">Patreon</a>
       </div>
     </div>
+    <!-- Designed Without Footer -->
     <script src="loader.js"></script>
     <script src="https://w.soundcloud.com/player/api.js"></script>
     <script src="windows.js"></script>
