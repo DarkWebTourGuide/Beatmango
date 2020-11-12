@@ -1,5 +1,4 @@
 //Global
-
 var iframeElement = document.querySelector("iframe");
 var widget1 = SC.Widget(iframeElement);
 var widget = null;
@@ -12,13 +11,11 @@ function shuffleButt() {
     widget1.bind(SC.Widget.Events.FINISH, function () {
       play_next_shuffled_song();
     });
-
     widget1.getSounds(function (sounds) {
       create_shuffled_indexes(sounds.length);
       play_next_shuffled_song();
     });
   });
-
   //Next Button Click
   document
     .querySelector("#button_sc_next")
