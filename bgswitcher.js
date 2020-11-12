@@ -31,13 +31,13 @@ var sbg = [
   "Assets/staticbg/greymatter.png",
 ];
 
-//Main Variables
+//Main Variables Background + Slideshow Buttons
 var x = 0;
 var timer;
 const bgswap = document.getElementById("bgswap");
 const ssbtn = document.getElementById("ss");
 
-//Main Gif Background Switch
+//Main Gif Background Switch -- Refactor = interpolate --
 function displayImage(x) {
   bgswap.style.backgroundImage = "url(" + bg[x] + ")";
 }
@@ -58,14 +58,14 @@ function startTimer() {
   }
 }
 
-//Next Gif
+//Next Gif -- Refactor --
 function nextImage() {
   x = x === bg.length - 1 ? 0 : x + 1;
   document.getElementById("bgswap").style.backgroundImage =
     "url(" + bg[x] + ")";
 }
 
-//Previous Gif
+//Previous Gif -- Refactor --
 function previousImage() {
   x = x <= 0 ? bg.length - 1 : x - 1;
   document.getElementById("bgswap").style.backgroundImage =
