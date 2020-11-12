@@ -29,7 +29,7 @@ body {
   background-position: center;
   overflow: hidden !important;
   cursor: default !important;
-  user-select: none;
+  user-select: none; /* No touchy my text*/
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -57,7 +57,6 @@ body .bgchange {
 }
 
 /* Icon Section */
-
 .icon-section {
   left: 5px;
   bottom: 10px;
@@ -81,7 +80,7 @@ body .bgchange {
   display: flex;
 }
 
-/* Radio Icons */
+/* Radio Icon */
 .radioiconbutton {
   padding: 50px 50px 50px 50px;
   font-family: "Press Start 2P", cursive;
@@ -146,17 +145,16 @@ body .bgchange {
   display: none; /* not visible by default */
   color: #000;
   background: rgb(230, 177, 129);
-  border: 1px solid #000; /* change allowed; Border to separate multipe dialog boxes */
+  border: 1px solid #000; /* change allowed; Border to indicate separation */
   margin: 0;
   position: absolute;
   box-shadow: 5px 10px;
 }
-
 .dialog .titlebar {
   font-size: 14px;
   font-weight: 400;
-  height: 32px; /* same as .dialog>button height */
-  line-height: 32px; /* same as .dialog>button height */
+  height: 32px; /* same as .dialog button height */
+  line-height: 32px; /* same as .dialog button height */
   vertical-align: middle;
   padding: 0 8px 0 8px; /* change NOT allowed */
   white-space: nowrap;
@@ -175,7 +173,6 @@ body .bgchange {
   left: 16px; /* change NOT allowed */
   overflow: auto;
 }
-
 .dialog .content a {
   font-family: "Press Start 2P", cursive;
   border: 1px solid #000;
@@ -186,34 +183,15 @@ body .bgchange {
   display: block;
   margin-bottom: 7px;
 }
-
 .dialog .content a:active {
   transform: scale(0.85);
 }
-
 .dialog .content a:hover {
   transform: scale(0.95);
   color: #e80;
 }
-
-.dialog .buttonpane:before {
-  width: 100%;
-  height: 0;
-  border-bottom: 1px solid; /* change allowed */
-  content: "";
-  position: absolute;
-  top: -16px; /* change allowed */
-}
-.dialog .buttonpane {
-  width: 100%;
-  position: absolute;
-  bottom: 16px; /* change allowed */
-  right: 16px; /* change NOT allowed */
-  white-space: nowrap; /* keep buttons on one line */
-}
-.dialog .buttonset {
-  float: right;
-}
+/* Title Bar Close Buttons Only */
+/* Links Replace Buttons In Main Content Area */
 .dialog button {
   -webkit-transition: 0.25s;
   transition: 0.25s;
@@ -222,12 +200,7 @@ body .bgchange {
 .dialog button::-moz-focus-inner {
   border: 0;
 }
-/* .dialog button.hover, */ /* Let's use standard hover */
-.dialog button:hover,
-.dialog button.active {
-  cursor: pointer;
-}
-.dialog > button {
+.dialog button {
   width: 32px; /* change NOT allowed */
   height: 32px; /* same as .dialog .titlebar height */
   position: absolute;
@@ -238,65 +211,35 @@ body .bgchange {
   font-size: 1.4em;
   background: #000;
 }
-/* .dialog>button.hover, */
-.dialog > button:hover,
-.dialog > button.focus {
+/* .dialog button.hover active */
+.dialog button:hover,
+.dialog button.active {
+  cursor: pointer;
+}
+/* .dialog button.hover focus */
+.dialog button:hover,
+.dialog button.focus {
   box-shadow: inset -16px 0 0 0 #e80, inset 16px 0 0 0 #e80;
 }
-.dialog > button.active {
-  background: #f55; /* irrelevant */
-  border: 1px solid #ddd; /* irrelevant */
-}
-.dialog .buttonset button {
-  height: 32px; /* change allowed */
-  width: 64px; /* change allowed */
-  font-size: 1.1em;
-  padding: 0; /* irrelevant */
-  border: 2px solid #fff; /* change allowed */
-  border-radius: 4px; /* change allowed */
-  margin-left: 16px; /* change NOT allowed */
-  background: #39c;
-}
-.dialog .buttonset button:first-child {
-  margin-left: 0;
-}
-/* .dialog .buttonset button.hover, */
-.dialog .buttonset button:hover,
-.dialog .buttonset button.focus {
-  box-shadow: inset -32px 0 0 0 #17a, inset 32px 0 0 0 #17a;
-}
-.dialog .buttonset button.active {
-  background: #1a7;
-  border-color: #ddd;
-}
 
-.dialog .buttonset a {
-  border: 1px solid #000;
-  margin: auto;
-  padding: 5px;
-  background-color: #000;
-  color: #fff;
-}
-
-/* Gifs*/
+/* MangOS Gif */
 .mangif {
   width: 100%;
   height: 100%;
   max-width: 280px;
   max-height: 200px;
 }
-
+/* Radio Visualizer Gif */
 .radgif {
   width: 100%;
   height: 100%;
   max-width: 280px;
   max-height: 50px;
 }
-
 /* Loader */
 .loader {
-  position: fixed;
-  z-index: 99;
+  position: absolute;
+  z-index: 99; /* Make Sure Top Layer */
   top: 0;
   left: 0;
   width: 100%;
@@ -306,16 +249,13 @@ body .bgchange {
   justify-content: center;
   align-items: center;
 }
-
-.loader > img {
-  width: 200px;
+.loader img {
+  width: 200px; /* Fits Mobile */
 }
-
 .loader.hidden {
   animation: fadeOut 1s;
   animation-fill-mode: forwards;
 }
-
 @keyframes fadeOut {
   100% {
     opacity: 0;
@@ -325,7 +265,7 @@ body .bgchange {
 
 /* Other elements */
 iframe {
-  display: none;
+  display: none; /* Hide Soundcloud iFrame */
 }
 
 #tracktitle {
