@@ -21,14 +21,14 @@ var bg = [
 
 //Static Background Array
 var sbg = [
-  "Assets/staticbg/classicmango.png",
-  "Assets/staticbg/delight.png",
-  "Assets/staticbg/greenrngr.png",
-  "Assets/staticbg/kamehameha.png",
-  "Assets/staticbg/plutoe.png",
-  "Assets/staticbg/sanctum.png",
-  "Assets/staticbg/nookscranny.png",
-  "Assets/staticbg/greymatter.png",
+  "/img/staticbg/classicmango.png",
+  "/img/staticbg/delight.png",
+  "/img/staticbg/greenrngr.png",
+  "/img/staticbg/kamehameha.png",
+  "/img/staticbg/plutoe.png",
+  "/img/staticbg/sanctum.png",
+  "/img/staticbg/nookscranny.png",
+  "/img/staticbg/greymatter.png",
 ];
 
 //Main Variables Background + Slideshow Buttons
