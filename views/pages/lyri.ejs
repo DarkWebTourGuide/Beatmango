@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include ('../partials/head') %>
+  </head>
+  <body>
+    <!--Navigation Bar-->
+    <header>
+        <%- include ('../partials/header') %>
+    </header>
+    <!--Intro Section-->
+    <div class="container-fluid jumbotron bg-light">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="display-4 d-block">Sing out loud</h1>
+          <br />
+          <br />
+          <p class="lead">
+            Simple. Fast. Elegant.
+            <br />
+            Lyri puts a stylish twist on finding the lyrics to that one song you
+            heard last summer at your friends birthday party.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img class="hero-image d-none d-md-block max-width" src="./assets/img/undraw_happy_music_g6wc.svg" width="400" height="400" alt="Happy Music Bird"/>
+        </div>
+      </div>
+    </div>
+    <!--Main App/Search Section-->
+    <div class="container-fluid">
+      <div class="row">
+        <main role="main" class="col-md-12 ml-sm-auto col-lg-12 px-md-4" id="lyrics">
+          <div class="d-flex justify-content-center flex-wrap flex-md-nowrap align-items-center text-center pt-3 pb-2 mb-3 border-bottom text-white">
+            <h1>Search millions of songs</h1>
+          </div>
+          <div class="col-md-12 text-center">
+            <!--Artist or Song Name Input-->
+            <form id="form">
+              <input type="text" id="search" placeholder="Search artist or song..."/>
+              <button id="searchButton">Search</button>
+            </form>
+          </div>
+          <!--Results Display-->
+          <div id="result" class="container text-white">
+            <p class="lead">Lyrics are displayed here.</p>
+          </div>
+          <!--More Results -->
+          <div id="more" class="container centered"></div>
+        </main>
+      </div>
+    </div>
+    <!--Info Section-->
+    <div class="container-fluid jumbotron bg-light">
+      <div class="row">
+        <div class="col-md-6">
+          <img class="hero-image d-none d-md-block max-width center" src="./assets/img/undraw_mello_otq1.svg" width="400" height="400" alt="Mello"/>
+        </div>
+        <div class="col-md-6 text-center">
+          <h1 class="d-block">Craving new tunes?</h1>
+          <br />
+          <br />
+          <p class="lead">
+            Check out Beatmango
+            <br />
+            Equal parts nostalgia and relaxation, Beatmango is a personally
+            curated media streaming platform built to make high attention tasks
+            more relaxing and flow friendly. It supplies audio, video, and
+            calming interactive content so sit back, relax and let the music
+            take control.
+          </p>
+            <a href="https://beatmango.com" target="_blank">
+              <button class="bmbtn">Explore</button>
+            </a>
+          <br />
+          <br />
+        </div>
+        <br />
+        <br />
+        <div class="col-md-6">
+          <img class="d-sm-none img-fluid max-width center" src="./assets/img/undraw_mello_otq1.svg" width="400" height="400" alt="Mello"/>
+        </div>
+      </div>
+    </div>
+<footer>
+    <%- include('../partials/footer')%>   
+</footer>
+
+    <!--Javascript-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+    <script src="/js/lyri.js"></script>
+  </body>
+</html>
