@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Beatmango</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1." />
+    <meta name=robots content="index,follow">
+    <meta name="description" content="A personally curated audio streaming platform for relaxing lofi beats.">
+    <meta name="keywords" content="Beatmango, lofi, lofi beats, beat mango, free lofi, chill beats">
+    <meta name="author" content="ChrisAdams.io">
+    <link rel="icon" href="Assets/favi.png" type="image/png" />
+    <link rel="apple-touch-icon" href="Assets/appicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body onload="showUpdate()" id="bgswap" class="bgchange">
+    <div class="loader">
+      <img src="Assets/gifs/loader.gif" alt="Loading..." />
+    </div>
+    <!-- Icon Section *ALWAYS AT BOTTOM* -->
+    <div class="icon-section">
+      <ul>
+        <!--Radio Icon-->
+        <li>
+          <button
+            id="show-radio"
+            class="radioiconbutton"
+            onclick="showRadio(), shuffleButt(), currSong();"
+          ></button>
+        </li>
+        <!--About Icon-->
+        <li>
+          <button
+            id="show-about"
+            class="abouticonbutton"
+            onclick="showAbout();"
+          ></button>
+        </li>
+        <!--Settings Icon-->
+        <li>
+          <button
+            id="show-settings"
+            class="settingsiconbutton"
+            onclick="showSettings();"
+          ></button>
+        </li>
+        <!--Donate Icon-->
+        <li>
+          <button
+            id="show-dono"
+            class="donoiconbutton"
+            onclick="showDono();"
+          ></button>
+        </li>
+      </ul>
+    </div>
+    <!-- Window Layouts -->
+    <!--Radio Window-->
+    <div
+      id="radio"
+      class="dialog"
+      style="min-width: 280px; min-height: 300px; max-width: 280px">
+      <div class="titlebar">Radio</div>
+      <button name="close">X</button>
+      <div class="content">
+        <iframe
+          id="player"
+          width="100"
+          height="100"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1122034528">
+        </iframe>
+        <div id="tracktitle"></div>
+        <br />
+        <img class="radgif" src="Assets/gifs/radio.gif"/>
+        <a href="javascript:playPause()" target="_blank">
+          <span id="playpause">Pause</span>
+        </a>
+        <a href="javascript:play_next_shuffled_song(),currSong()" id="button_sc_next">Next
+        </a>
+      </div>
+    </div>
+    <!--Settings Window-->
+    <!-- Links replace buttons in windows due to window resize/drag constraints -->
+    <div
+      id="settings"
+      class="dialog"
+      style="min-width: 250px; min-height: 390px">
+      <div class="titlebar">Settings</div>
+      <button name="close">X</button>
+      <div class="content">
+        <h3>Change Background:</h3>
+        <a href="javascript:randomImage()">Random.Gif</a>
+        <a href="javascript:previousImage()">Prev.Gif</a>
+        <a href="javascript:nextImage()">Next.Gif</a>
+        <a href="javascript:startTimer()"><span id="ss">Slideshow.Off</span></a>
+        <h3>Static Themes</h3>
+        <a href="javascript:displayStatic(0)">Classic Mango</a>
+        <a href="javascript:displayStatic(1)">Delight</a>
+        <a href="javascript:displayStatic(2)">Green Rngr</a>
+        <a href="javascript:displayStatic(3)">Kamehameha</a>
+        <a href="javascript:displayStatic(4)">Plutoe</a>
+        <a href="javascript:displayStatic(5)">Sanctum</a>
+        <a href="javascript:displayStatic(7)">Grey Matter</a>
+        <a href="javascript:displayStatic(6)">Nook's Cranny</a>
+      </div>
+    </div>
+    <!--About Window-->
+    <div id="about" class="dialog" style="min-width: 320px; min-height: 380px">
+      <div class="titlebar">About</div>
+      <button name="close">X</button>
+      <div class="content">
+        <img class="mangif" src="Assets/gifs/mangOS.gif"/>
+        <h3>Developed by:</h3>
+        <h5>ChrisAdams.io</h5>
+        <h3>Design + Icons:</h3>
+        <h5>ChrisAdams.io</h5>
+        <h3>Resize + Drag:</h3>
+        <h5>ZulNs<br />FrankBuchholz</h5>
+        <h3>Powered by:</h3>
+        <h5>Soundcloud<br />Giphy</h5>
+      </div>
+    </div>
+    <!--Updates Window-->
+    <div id="update" class="dialog" style="min-width: 280px; min-height: 350px">
+      <div class="titlebar">Welcome!</div>
+      <button name="close">X</button>
+      <div class="content">
+        <h2>Latest Updates:</h2>
+        <h4>
+          Introducing Slideshow Mode in Settings.
+          <br />
+          <br />
+          New Static Themes
+          <br />
+          <br />
+          Player Button Fix
+        </h4>
+        <img
+          src="Assets/beatmango.png"
+          style="max-width: 200px; max-height: 100px"/>
+      </div>
+    </div>
+    <!--Donate Window-->
+    <div id="dono" class="dialog" style="min-width: 280px; min-height: 240px">
+      <div class="titlebar">Donate:</div>
+      <button name="close">X</button>
+      <div class="content">
+        <h4>Donations help further the project!</h4>
+        <a href="https://www.paypal.com/biz/fund?id=SEZ4EWQ7PMTNU" target="_blank">PayPal</a>
+        <a href="https://www.patreon.com/beatmango" target="_blank">Patreon</a>
+      </div>
+    </div>
+    <!-- Designed Without Footer -->
+    <script src="loader.js"></script>
+    <script src="https://w.soundcloud.com/player/api.js"></script>
+    <script src="windows.js"></script>
+    <script src="icons.js"></script>
+    <script src="bgswitcher.js"></script>
+    <script src="player.js"></script>
+  </body>
+</html>
