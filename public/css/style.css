@@ -80,64 +80,40 @@ body .bgchange {
   display: flex;
 }
 
-/* Radio Icon */
-.radioiconbutton {
+/* Icons */
+.iconbutton {
   padding: 50px 50px 50px 50px;
   font-family: "Press Start 2P", cursive;
   border: none;
   background: transparent;
-  background-image: url(/img/icons/radioicon.png);
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+}
+
+/* Radio Icon */
+.iradio {
+  background-image: url(/img/icons/radioicon.png);
 }
 
 /* MangOS (About) Icon */
-.abouticonbutton {
-  padding: 50px 50px 50px 50px;
-  font-family: "Press Start 2P", cursive;
-  border: none;
-  background: transparent;
+.iabout {
   background-image: url(/img/icons/abouticon.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
 }
 
 /* Settings Icon */
-.settingsiconbutton {
-  padding: 50px 50px 50px 50px;
-  font-family: "Press Start 2P", cursive;
-  border: none;
-  background: transparent;
+.isettings {
   background-image: url(/img/icons/settingsicon.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
 }
 
-/* Focus Icon */
-.pomoiconbutton {
-  padding: 50px 50px 50px 50px;
-  font-family: "Press Start 2P", cursive;
-  border: none;
-  background: transparent;
-  background-image: url(/img/icons/focusicon.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
+/* Lyri Icon */
+.ilyri {
+  background-image: url(/img/icons/lyriicon.png);
 }
 
 /* Donate Icon */
-.donoiconbutton {
-  padding: 50px 50px 50px 50px;
-  font-family: "Press Start 2P", cursive;
-  border: none;
-  background: transparent;
+.idono {
   background-image: url(/img/icons/donateicon.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
 }
 
 /* Windows */
