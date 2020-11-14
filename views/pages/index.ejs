@@ -24,7 +24,7 @@
         <li>
           <button
             id="show-radio"
-            class="radioiconbutton"
+            class="iradio iconbutton"
             onclick="showRadio(), shuffleButt(), currSong();"
           ></button>
         </li>
@@ -32,7 +32,7 @@
         <li>
           <button
             id="show-about"
-            class="abouticonbutton"
+            class="iabout iconbutton"
             onclick="showAbout();"
           ></button>
         </li>
@@ -40,7 +40,7 @@
         <li>
           <button
             id="show-settings"
-            class="settingsiconbutton"
+            class="isettings iconbutton"
             onclick="showSettings();"
           ></button>
         </li>
@@ -48,10 +48,20 @@
         <li>
           <button
             id="show-dono"
-            class="donoiconbutton"
+            class="idono iconbutton"
             onclick="showDono();"
           ></button>
         </li>
+      </ul>
+      <ul>
+        <!--Lyri Icon-->
+        <li>
+          <button
+            id="show-lyri"
+            class="ilyri iconbutton"
+            onclick="showLyri();"
+          ></button>
+        </li>        
       </ul>
     </div>
     <!-- Window Layouts -->
@@ -153,6 +163,18 @@
         <a href="https://www.patreon.com/beatmango" target="_blank">Patreon</a>
       </div>
     </div>
+        <!--Lyrics Window-->
+        <div id="lyri" class="dialog" style="min-width: 300px; min-height: 320px">
+          <div class="titlebar">Lyri Song Search</div>
+          <button name="close">X</button>
+          <div class="content">
+            <img
+            src="/img/lyriwindow.png" style="max-width: 90px; max-height: 90px"/>
+            <h4>Find lyrics to your favorite tunes!</h4>
+            <h4>Ahoy, this link will navigate away from Beatmango and open in a separate tab.</h4>
+            <a href="/lyri" target="_blank">Lets GO!</a>
+          </div>
+        </div>
     <!-- Designed Without Footer -->
     <script src="/js/loader.js"></script>
     <script src="https://w.soundcloud.com/player/api.js"></script>
