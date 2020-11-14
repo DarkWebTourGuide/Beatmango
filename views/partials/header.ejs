@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-md sticky-top bg-light align-items-center">
+    <a class="navbar-brand mr-auto" href="index.html">
+      <img src="./assets/img/lyri.png" width="90" height="90" alt="Lyri"/>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarCollapse"
+      aria-controls="navbarCollapse"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <i class="fa fa-ellipsis-v" style="font-size: 30px"></i>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark" data-toggle="modal" data-target="#infoModal" href="#infoModal">
+            Can't find a song?
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+      <!--Navbar Modal-->
+      <div
+      class="modal fade"
+      id="infoModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="infoLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="infoLabel">Thanks for using Lyri !</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Sorry we couldn't find your lyrics. We're working hard to add more
+              features to our search. Our priorities include better prediciton
+              and interpretation of submitted information. Feel free to try
+              tweaking your input to see if that helps.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
