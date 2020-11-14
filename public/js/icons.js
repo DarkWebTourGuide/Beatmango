@@ -26,6 +26,13 @@ function showDono() {
   dono.showDialog();
 }
 
+// Lyri Icon
+var lyri;
+function showLyri() {
+  if (!lyri) lyri = new DialogBox("lyri");
+  lyri.showDialog();
+}
+
 //Update Popup
 var update;
 function showUpdate() {
