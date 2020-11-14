@@ -5,6 +5,6 @@ const router = express.Router()
 router.get('/', function (req, res) {res.render('pages/index')})
 
 //lyri home page
-router.get('/info', function (req, res) {res.render('pages/lyri')})
+router.get('/lyri', function (req, res) {res.render('pages/lyri')})
 
 module.exports = router
