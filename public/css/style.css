@@ -86,7 +86,7 @@ body .bgchange {
   font-family: "Press Start 2P", cursive;
   border: none;
   background: transparent;
-  background-image: url(Assets/icons/radioicon.png);
+  background-image: url(/img/icons/radioicon.png);
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -98,7 +98,7 @@ body .bgchange {
   font-family: "Press Start 2P", cursive;
   border: none;
   background: transparent;
-  background-image: url(Assets/icons/abouticon.png);
+  background-image: url(/img/icons/abouticon.png);
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -110,7 +110,7 @@ body .bgchange {
   font-family: "Press Start 2P", cursive;
   border: none;
   background: transparent;
-  background-image: url(Assets/icons/settingsicon.png);
+  background-image: url(/img/icons/settingsicon.png);
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -122,7 +122,7 @@ body .bgchange {
   font-family: "Press Start 2P", cursive;
   border: none;
   background: transparent;
-  background-image: url(Assets/icons/focusicon.png);
+  background-image: url(/img/icons/focusicon.png);
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -134,7 +134,7 @@ body .bgchange {
   font-family: "Press Start 2P", cursive;
   border: none;
   background: transparent;
-  background-image: url(Assets/icons/donateicon.png);
+  background-image: url(/img/icons/donateicon.png);
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
