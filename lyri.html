@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <%- include ('../partials/head') %>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <meta name="description" content="Song Lyrics Made Simple" />
+    <meta name="author" content="ChrisAdams.io" />
+    <meta property="og:image" content="assets/img/bigimage.png" />
+    <title>Song Search Made Simple</title>
+    <link rel="icon" href="/img-lyri/fav.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/img-lyri/appicon.png">
+    <!--Font Awesome-->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+    <!--Main Styles-->
+    <link rel="stylesheet" type="text/css" href="/css/lyri.css" />
   </head>
   <body>
     <!--Navigation Bar-->
     <header>
-        <%- include ('../partials/header') %>
+        <nav class="navbar navbar-expand-md sticky-top bg-light align-items-center">
+            <a class="navbar-brand mr-auto" href="/lyri">
+              <img src="/img-lyri/lyri.png" width="90" height="90" alt="Lyri"/>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarCollapse"
+              aria-controls="navbarCollapse"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+                <i class="fa fa-ellipsis-v" style="font-size: 30px"></i>
+              </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link text-dark" data-toggle="modal" data-target="#infoModal" href="#infoModal">
+                    Can't find a song?
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+              <!--Navbar Modal-->
+              <div
+              class="modal fade"
+              id="infoModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="infoLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="infoLabel">Thanks for using Lyri !</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Sorry we couldn't find your lyrics. We're working hard to add more
+                      features to our search. Our priorities include better prediciton
+                      and interpretation of submitted information. Feel free to try
+                      tweaking your input to see if that helps.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
     </header>
     <!--Intro Section-->
     <div class="container-fluid jumbotron bg-light">
@@ -82,7 +147,10 @@
       </div>
     </div>
 <footer>
-    <%- include('../partials/footer')%>   
+    <!--Footer-->
+    <div class="container text-center">
+        <a class="text-dark" href="https://chrisadams.io" target="_blank">ChrisAdams.io</a>
+      </div>
 </footer>
 
     <!--Javascript-->
