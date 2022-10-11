@@ -41,10 +41,8 @@ function create_shuffled_indexes(num_songs) {
   song_indexes = shuffle(song_indexes);
 }
 
-//+ Jonas Raoni Soares Silva
-//@ http://jsfromhell.com/array/shuffle [v1.0]
+
 function shuffle(o) {
-  //v1.0
   for (
     var j, x, i = o.length;
     i;
