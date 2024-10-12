@@ -20,6 +20,11 @@ function shuffleButt() {
   document
     .querySelector("#button_sc_next")
     .addEventListener("click", play_next_shuffled_song);
+
+  document.getElementById("playpause").addEventListener("click", function(event) {
+    event.preventDefault();
+    playPause();
+  });
 }
 
 //Next Button Auto Shuffle
@@ -54,13 +59,15 @@ function shuffle(o) {
 //Play/Pause Button
 function playPause() {
   var pause = document.getElementById("playpause");
-  if (pause.innerHTML === "Pause") {
-    widget1.pause();
-    pause.innerHTML = "Play";
-  } else {
-    widget1.play();
-    pause.innerHTML = "Pause";
-  }
+  widget1.isPaused(function(paused) {
+    if (!paused) {
+      widget1.pause();
+      pause.innerHTML = "Play";
+    } else {
+      widget1.play();
+      pause.innerHTML = "Pause";
+    }
+  });
 }
 
 //Current Song Data

@@ -14,6 +14,9 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
   </head>
   <body onload="showUpdate()" id="bgswap" class="bgchange">
+    <div id="top-bar">
+      <div id="time"></div>
+    </div>
     <div class="loader">
       <img src="/gifs/loader.gif" alt="Loading..." />
     </div>
@@ -23,10 +26,10 @@
         <!--Radio Icon-->
         <li>
           <button
-            id="show-radio"
-            class="iradio iconbutton"
-            onclick="showRadio(), shuffleButt(), currSong();"
-          ></button>
+          id="show-radio"
+          class="iradio iconbutton"
+          onclick="showRadio();"
+        ></button>
         </li>
         <!--Lyri Icon-->
         <li>
@@ -170,5 +173,6 @@
     <script src="/js/icons.js"></script>
     <script src="/js/bgswitcher.js"></script>
     <script src="/js/player.js"></script>
+    <script src="/js/utils.js"></script>
   </body>
 </html>

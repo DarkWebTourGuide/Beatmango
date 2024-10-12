@@ -1,8 +1,16 @@
 //Radio Icon
-var radio;
+var radio
+var radioInitialized = false;
+
 function showRadio() {
   if (!radio) radio = new DialogBox("radio");
   radio.showDialog();
+  
+  if (!radioInitialized) {
+    shuffleButt();
+    currSong();
+    radioInitialized = true;
+  }
 }
 
 //Settings Icon
