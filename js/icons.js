@@ -41,12 +41,36 @@ function showLyri() {
   lyri.showDialog();
 }
 
+// Focus Icon
+var focusIcon;
+function showFocusIcon() {
+  if (!focusIcon) focusIcon = new DialogBox("focus");
+  focusIcon.showDialog();
+}
+
+// TV Icon
+var tvIcon;
+function showTvIcon() {
+  if (!tvIcon) tvIcon = new DialogBox("tv");
+  tvIcon.showDialog();
+}
+
+// Playlist Icon
+var playlistIcon;
+function showplaylistIcon() {
+  if (!playlistIcon) playlistIcon = new DialogBox("playlist");
+  playlistIcon.showDialog();
+}
+
 //Update Popup
 var update;
 function showUpdate() {
   if (!update) update = new DialogBox("update");
   update.showDialog();
 }
+
+
+
 
 //Possible Future Icons
 

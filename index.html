@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <title>Beatmango</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name=robots content="index,follow">
     <meta name="description" content="A personally curated audio streaming platform for relaxing lofi beats.">
     <meta name="keywords" content="Beatmango, lofi, lofi beats, beat mango, free lofi, chill beats">
@@ -15,6 +15,10 @@
   </head>
   <body onload="showUpdate()" id="bgswap" class="bgchange">
     <div id="top-bar">
+      <div class="logo-container">
+        <img src="/img/beatmango-logo.png" alt="Beatmango Logo" class="logo">
+        <span class="title">Beatmango.FM</span>
+      </div>
       <div id="time"></div>
     </div>
     <div class="loader">
@@ -53,6 +57,38 @@
             id="show-settings"
             class="isettings iconbutton"
             onclick="showSettings();"
+          ></button>
+        </li>
+        <!--TV Icon-->
+        <li>
+          <button
+            id="show-tv"
+            class="itv iconbutton"
+            onclick="showTvIcon();"
+          ></button>
+        </li>
+        <!--Playlist Icon-->
+        <li>
+          <button
+            id="show-playlist"
+            class="iplaylist iconbutton"
+            onclick="showplaylistIcon();"
+          ></button>
+        </li>
+        <!--Focus Icon-->
+        <li>
+          <button
+            id="show-focus"
+            class="ifocus iconbutton"
+            onclick="showFocusIcon();"
+          ></button>
+        </li>
+        <!--Donate Icon-->
+        <li>
+          <button
+            id="show-dono"
+            class="idono iconbutton"
+            onclick="showDono();"
           ></button>
         </li>
       </ul>       
@@ -125,33 +161,31 @@
       </div>
     </div>
     <!--Updates Window-->
-    <div id="update" class="dialog" style="min-width: 280px; min-height: 350px">
+    <div id="update" class="dialog" style="min-width: 280px; min-height: 280px">
       <div class="titlebar">Welcome!</div>
       <button name="close">X</button>
       <div class="content">
         <h2>Latest Updates:</h2>
         <h4>
-          Introducing Slideshow Mode in Settings.
+          Updated Slideshow Mode.
           <br />
           <br />
-          New Static Themes
+          3 New Static Themes
           <br />
           <br />
-          Player Button Fix
+          Play/Pause Button Fix
         </h4>
         <img
-          src="/img/beatmango.png"
-          style="max-width: 200px; max-height: 100px"/>
+        src="/img/beatmango-logo.png" style="max-width: 40px; max-height: 40px"/>
       </div>
     </div>
     <!--Donate Window-->
     <div id="dono" class="dialog" style="min-width: 280px; min-height: 240px">
-      <div class="titlebar">Donate:</div>
+      <div class="titlebar">Support</div>
       <button name="close">X</button>
       <div class="content">
-        <h4>Donations help further the project!</h4>
-        <a href="https://www.paypal.com/biz/fund?id=SEZ4EWQ7PMTNU" target="_blank">PayPal</a>
-        <a href="https://www.patreon.com/beatmango" target="_blank">Patreon</a>
+        <h4>Consider supporting us on Patreon! Your contribution will go towards website maintenance, new features, and even higher-quality music production.</h4>
+        <a href="https://patreon.com/Beatmangofm?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink" target="_blank">Patreon</a>
       </div>
     </div>
         <!--Lyrics Window-->
@@ -164,6 +198,35 @@
             <h4>Find lyrics to your favorite tunes!</h4>
             <h4>Ahoy, this link will navigate away from Beatmango and open in a separate tab.</h4>
             <a href="/lyri.html" target="_blank">Lets GO!</a>
+          </div>
+        </div>
+        <!--Focus Window-->
+        <div id="focus" class="dialog" style="min-width: 300px; min-height: 180px">
+          <div class="titlebar">Focus Timer</div>
+          <button name="close">X</button>
+          <div class="content">
+            <h4>Coming Soon!</h4>
+            <h4>Enjoy a pomodoro timer to help boost your productivity.</h4>
+          </div>
+        </div>
+        <!--Playlist Window-->
+        <div id="playlist" class="dialog" style="min-width: 300px; min-height: 240px">
+          <div class="titlebar">Spotify Playlists</div>
+          <button name="close">X</button>
+          <div class="content">
+            <h4>Our curated collection of beats for any occation</h4>
+            <h4>Ahoy, this link will navigate away from Beatmango and open in a separate tab.</h4>
+            <a href="https://open.spotify.com/artist/76k5gsveDzgnb8SdXbw1Ny?si=vRZdMJ1sQoy99WS2uDS0IQ" target="_blank">Open Spotify</a>
+          </div>
+        </div>
+        <!--TV Window-->
+        <div id="tv" class="dialog" style="min-width: 300px; min-height: 280px">
+          <div class="titlebar">Watch On Youtube</div>
+          <button name="close">X</button>
+          <div class="content">
+            <h4>Your go-to destination for indie beats and hand picked playlists.</h4>
+            <h4>We create and curate the perfect soundscapes to accompany your study sessions, work hours, or relaxation time.</h4>
+            <a href="https://www.youtube.com/@beatmangofm" target="_blank">Go to channel</a>
           </div>
         </div>
     <!-- Designed Without Footer -->
