@@ -12,6 +12,7 @@
     <link rel="icon" href="/img/favi.png" type="image/png" />
     <link rel="apple-touch-icon" href="img/appicon.png">
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   </head>
   <body onload="showUpdate()" id="bgswap" class="bgchange">
     <div id="top-bar">
@@ -161,13 +162,13 @@
       </div>
     </div>
     <!--Updates Window-->
-    <div id="update" class="dialog" style="min-width: 280px; min-height: 280px">
+    <div id="update" class="dialog" style="min-width: 320px; min-height: 240px;">
       <div class="titlebar">Welcome!</div>
       <button name="close">X</button>
       <div class="content">
-        <h2>Latest Updates:</h2>
-        <h4>
-          Updated Slideshow Mode.
+        <h2 style="font-family: 'Press Start 2P', cursive; font-size: 14px;">Latest Updates:</h2>
+        <h4 style="font-family: 'Press Start 2P', cursive; font-size: 10px;">
+          Updated Slideshow Mode
           <br />
           <br />
           3 New Static Themes
@@ -175,8 +176,6 @@
           <br />
           Play/Pause Button Fix
         </h4>
-        <img
-        src="/img/beatmango-logo.png" style="max-width: 40px; max-height: 40px"/>
       </div>
     </div>
     <!--Donate Window-->
@@ -205,25 +204,29 @@
           <div class="titlebar">Focus Timer</div>
           <button name="close">X</button>
           <div class="content">
+            <img
+            src="/img/icons/pomoicon.png" style="max-width: 80px; max-height: 80px"/>
             <h4>Coming Soon!</h4>
-            <h4>Enjoy a pomodoro timer to help boost your productivity.</h4>
           </div>
         </div>
         <!--Playlist Window-->
-        <div id="playlist" class="dialog" style="min-width: 300px; min-height: 240px">
+        <div id="playlist" class="dialog" style="min-width: 300px; min-height: 260px">
           <div class="titlebar">Spotify Playlists</div>
           <button name="close">X</button>
           <div class="content">
+            <img
+            src="/img/icons/spotifyicon.png" style="max-width: 80px; max-height: 80px"/>
             <h4>Our curated collection of beats for any occation</h4>
-            <h4>Ahoy, this link will navigate away from Beatmango and open in a separate tab.</h4>
             <a href="https://open.spotify.com/artist/76k5gsveDzgnb8SdXbw1Ny?si=vRZdMJ1sQoy99WS2uDS0IQ" target="_blank">Open Spotify</a>
           </div>
         </div>
         <!--TV Window-->
-        <div id="tv" class="dialog" style="min-width: 300px; min-height: 280px">
+        <div id="tv" class="dialog" style="min-width: 320px; min-height: 320px">
           <div class="titlebar">Watch On Youtube</div>
           <button name="close">X</button>
           <div class="content">
+            <img
+            src="/img/icons/youtubeicon.png" style="max-width: 60px; max-height: 60px"/>
             <h4>Your go-to destination for indie beats and hand picked playlists.</h4>
             <h4>We create and curate the perfect soundscapes to accompany your study sessions, work hours, or relaxation time.</h4>
             <a href="https://www.youtube.com/@beatmangofm" target="_blank">Go to channel</a>
